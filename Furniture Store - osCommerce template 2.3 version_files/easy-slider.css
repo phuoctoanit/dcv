@@ -1,0 +1,97 @@
+			
+/* Easy Slider */
+ /* image replacement */
+.graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next{
+            margin:0;
+            padding:0;
+            display:block;
+            overflow:hidden;
+            text-indent:-8000px;
+            }
+#content-slide{
+		position:relative;
+	   
+		}	
+		
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2{margin-top:1em;}
+	#slider li, #slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:725px;
+		height:300px;
+		overflow:hidden;
+		}	
+	#prevBtn, #nextBtn,
+	#slider1next, #slider1prev{ 
+		display:block;
+		width:30px;
+		height:77px;
+		position:absolute;
+		left:0px;
+		bottom:0px;
+		z-index:1000;
+		}	
+	#nextBtn, #slider1next{ 
+		left:770px;
+		}														
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{  
+		display:block;
+		position:relative;
+		width:30px;
+		height:77px;
+		background:#f00;	
+		}	
+	#nextBtn a, #slider1next a{ 
+		background:#0ff;	
+		}	
+		
+	/* numeric controls */	
+
+	ol#controls{
+		margin:0;
+		padding:0;
+		height:25px;
+		position:absolute;
+		left:0;
+		bottom:15px;
+		width:724px;
+		background:url(images/bg_pag.png) left top no-repeat
+		}
+	ol#controls li:first-child{ margin-left:325px}
+	ol#controls li{
+		margin:0; 
+		padding:0;
+		float:left;
+		list-style:none;
+		height:22px;
+		line-height:28px;
+		margin-right:10px;
+		padding-top:5px
+		}
+	ol#controls li a{
+		float:left;
+		height:18px;
+		line-height:28px;
+		border:0px solid #ccc;
+		background: url(images/bullet.png) left top no-repeat;
+		color:#555;
+		padding:0 10px;
+		text-decoration:none;
+		text-indent:-9999px;
+		}
+	ol#controls li.current a{
+		background: url(images/bullet.png) left bottom no-repeat;
+		color:#fff;
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;		background: url(images/bullet.png) left bottom no-repeat;}
+	
+	
